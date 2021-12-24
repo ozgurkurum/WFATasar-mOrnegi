@@ -19,8 +19,9 @@ namespace WFATasarımOrnegi
 
         private void btnHesapla_Click(object sender, EventArgs e)
         {
-            DateTime dtm = new DateTime();
-            dtm=
+            DateTime dt = dtpDogumTarihi.Value;
+            int yil = DateTime.Now.Year - dtpDogumTarihi.Value.Year;
+            lblYas.Text += yil.ToString();
         }
     }
 }
